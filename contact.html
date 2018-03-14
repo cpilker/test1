@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Basic Portfolio</title>
+    
+        <!-- This line is money! It points your HTML to the CSS file. -->
+        <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    </head>
+
+    <body background="assets/images/dust_scratches.png">
+        
+        <!-- class is to make the containers white and not be impacted by the body background -->
+        <div id="master_header">
+
+            <div class="header_container">
+
+                <h1 id="Chad-Pilker">Chad Pilker</h1>   
+                
+                <div id="links">
+                    <a id="Basic_info" href="index.html">About</a>      
+                    <a id="Portfolio" href="portfolio.html">Portfolio</a>   
+                    <a id="Contact" href="contact.html">Contact</a>
+                </div>
+                
+            </div>
+        </div>
+
+        
+            <div class="content_container">
+                
+                <h2>Contact</h2>
+                <form id="input_contact" action="/action_page.php">
+                    Name: <br>
+                    <input class="name_email" type="text" name="firstandlastname" placeholder="John Smith">
+            
+                    <br><br>
+            
+                    E-mail: <br>
+                    <input class="name_email" type="text" name="e-mail" placeholder="example@email.com">
+            
+                    <br><br>
+                </form>
+
+                <form action="/action_page.php">
+                    Message: <br>
+                    <input id="message" type="text" name="message" placeholder="Message...">
+                    <br>
+                </form>
+
+                <br>
+
+                <button onclick="alert('Message e-mailed to chad.pilker@gmail.com.')">Submit</button>
+
+            </div>
+
+        <br>
+
+        <footer id="copyright">Copyright ©</footer>
+    </body>
+
+</html>
